@@ -44,10 +44,9 @@ public class VoiceRecognitionActivity extends AppCompatActivity implements Recog
         recognizerIntent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL,
                 RecognizerIntent.EXTRA_LANGUAGE_PREFERENCE);
         recognizerIntent.putExtra(RecognizerIntent.EXTRA_SPEECH_INPUT_COMPLETE_SILENCE_LENGTH_MILLIS,
-                5000);
+                10000);
         recognizerIntent.putExtra(RecognizerIntent.EXTRA_PREFER_OFFLINE,
                 true);
-        recognizerIntent.putExtra(RecognizerIntent.EXTRA_MAX_RESULTS, 3);
 
         toggleButton.setOnCheckedChangeListener(new OnCheckedChangeListener() {
 
